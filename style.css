@@ -4,6 +4,10 @@ body{
     background: #151515;
     color: white;
 }
+main{
+    max-width: 1300px;
+    margin: auto;
+}
 .all_over{
     display: grid;
     grid-template-columns: 3fr 1fr;
