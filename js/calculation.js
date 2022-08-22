@@ -9,6 +9,7 @@ function getInputValue(inputId){
 document.getElementById('calculate').addEventListener('click', function(){
     const perPlayer = getInputValue('per-player-cost');
     const playerExpensesField = document.getElementById('player-expenses');
+    const playerLength = document.getElementById('selected-player-container');
     playerExpensesField.innerText = perPlayer * 5;
 });
 document.getElementById('calculate-total').addEventListener('click', function(){
