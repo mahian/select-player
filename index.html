@@ -12,20 +12,20 @@
 </head>
 <body>
     <header>
-        <div class="relative">
+        <div class="relative hidden lg:block">
             <img class="absolute bottom-0 -left-10" src="images/Mask Group.png" alt="">
         </div>
-        <div class="flex flex-col items-center justify-center py-10">
-            <h1 class="main_title text-orange-500 text-7xl font-bold text-center">Select Your fevorite player</h1>
+        <div class="flex flex-col items-center justify-center p-10 w-full">
+            <h1 class="main_title text-orange-500 text-5xl md:text-7xl font-bold text-center">Select Your fevorite player</h1>
             <p class="mt-5 text-center text-lg text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <div class="place-self-center">
+        <div class="place-self-center hidden lg:block">
             <img src="images/Card-psg.png" alt="">
         </div>
     </header>
     <main class="py-10">
         <div class="all_over">
-            <div class="player_section grid grid-cols-3 gap-4">
+            <div class="player_section grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                 
                 <div class="flex flex-col bg-slate-700 rounded-md overflow-hidden">
                     <img src="images/player-1.png" alt="">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="mt-10 p-10">
                     <h3 class="fw-bold text-4xl text-center">Budget</h3>
-                    <div class="grid grid-cols-2 mt-5">
+                    <div class="grid grid-cols-2 mt-10">
                         <span class="text-gray-400 self-center text-lg">Per player</span>
                         <input id="per-player-cost" class="bg-transparent border-2 py-3 px-4" type="text">
                     </div>
@@ -132,8 +132,8 @@
                     </div>
                     <button id="calculate-total" class="py-2 px-5 w-full bg-blue-600 my-5">CALCULATE TOTAL</button>
                     <div class="text-lg flex items-center justify-between">
-                        <span class="text-gray-400 fw-bold">total</span>
-                        <span class="text-red-600 fw-bold">$<span id="total-cost">00</span></span>
+                        <span class="text-gray-400 font-bold">total</span>
+                        <span class="text-red-600 font-bold">$<span id="total-cost">00</span></span>
                     </div>
                 </div>
             </div>

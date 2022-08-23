@@ -12,11 +12,7 @@ document.getElementById('calculate').addEventListener('click', function(){
     const playerExpensesField = document.getElementById('player-expenses');
     const selectedList = document.getElementById('selected-player-container');
     const listLength = selectedList.children.length;
-    if(listLength > 5){
-        alert("you can't get player more than 5");
-    }else{
-        playerExpensesField.innerText = perPlayer * listLength;
-    }
+    playerExpensesField.innerText = perPlayer * listLength;
 });
 document.getElementById('calculate-total').addEventListener('click', function(){
     const managerCost = getInputValue('manager-cost');
